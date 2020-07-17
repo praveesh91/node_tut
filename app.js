@@ -4,6 +4,8 @@ const fs = require('fs');
 const EventEmitter = require('events')
 const http = require('http')
 
+
+
 var pathObj = path.parse(__filename)
 console.log(pathObj);
 
@@ -34,7 +36,7 @@ var server = http.createServer((req, res) =>{
         res.write("Hello World");
         res.end();
     }
-    
+
     if(req.url === '/api/endpoint'){
         res.write(JSON.stringify([1,2,3,4,5]));
         res.end();

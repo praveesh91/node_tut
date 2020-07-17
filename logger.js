@@ -1,10 +1,10 @@
-var url = "localhost:3000"
-function func(msg){
+const PI = 3.14;
+var func = function(msg){
     console.log("Function message",msg)
 }
-function func1(num1, num2){
+var func1 = function(num1, num2){
     console.log("Function number",num1+num2)
 }
-module.exports = func;
-module.exports = func1;
-// module.exports = url;
+module.exports.message = func;
+module.exports.addition = func1;
+module.exports.PIval = PI;
